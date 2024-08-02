@@ -1,0 +1,107 @@
+body{
+    background-color:  #333; /* Darker background color for a more intense look */;
+    background-image: url('images/plan_wallpaper.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    
+}
+
+.choose-plans{
+    /* margin-top: 0; */
+    width: 100%;
+    
+    text-align: center;
+}
+
+.choose-plans h3{
+    font-family: 'Impact', sans-serif; /* Bold, strong font for impact */
+    font-size: 4rem; /* Larger font size for emphasis */
+    font-weight: bold; /* Bold text */
+    color: #e0e0e0; /* Slightly darker whiteish-grey for text */
+    margin-bottom: 2rem; /* Space below the title */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 3px; /* Spacing between letters */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9), 2px 2px 4px rgba(255, 255, 255, 0.7); /* Enhanced shadow for high visibility */
+    background: linear-gradient(135deg, #f5f5f5, #d0d0d0); /* More pronounced gradient background */
+    -webkit-background-clip: text; /* Clip gradient to text */
+}
+
+
+/* Plan Container Styling */
+
+.plan-containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.plan-box{
+    background-color: #444; /* Dark background for boxes */
+    color: white; /* Text color inside boxes */
+    border-radius: 0.5rem; /* Rounded corners */
+    overflow: hidden; /* Ensures content doesn't overflow */
+    width: 300px; /* Fixed width for consistency */
+    height: 347px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    position: relative; /* For positioning content */
+    text-align: center; /* Center text inside the box */
+}
+
+
+.plan-image img{
+    width: 100%; /* Image covers the width of the box */
+    height: 225px; /* Fixed height for images */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+/* Plan content styling */
+.plan-content {
+    padding: 1rem; /* Space inside the box */
+}
+
+/* Plan description styling */
+.plan-content p {
+    font-size: 1rem; /* Font size for descriptions */
+    margin-bottom: 0; /* Remove margin at the bottom */
+}
+
+/* Hover effects for the plan boxes */
+.plan-box:hover {
+    transform: translateY(-10px); /* Lift the box on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Enhanced shadow */
+}
+
+/* Footer Section */
+footer{
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    text-align: left; /* Center text */
+    padding: 1rem; /* Padding around the footer */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 70px; /* Align at the bottom */
+    width: 100%;
+    height: 4.5rem;
+    font-size: 0.875rem; /* Smaller font size */
+    text-decoration: none;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:visited{
+    color: #1E90FF;
+}
+
+footer a:hover{
+    color: #FF4500;
+    transition-duration: 1.5s;
+}
+
+.fade-out{
+    opacity: 0;
+    transition: opacity 0.5s ease-out; /* Adjust the duration and easing as needed */
+}

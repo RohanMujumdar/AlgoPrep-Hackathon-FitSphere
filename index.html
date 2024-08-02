@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <title>FitSphere</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">  
+            <div class="title-section">
+                <img src="images/title_logo.jpg" alt="title_img">
+                <p>FitSphere</p>
+            </div>
+            <div class="item-section">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#levels" class="nav-item">Levels</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="intro-section" id="home">
+        <div class="intro">
+            Welcome to FitSphere Beast<br>Time to get Beastlyyy!!! 
+        </div>
+    </div>
+
+    <div class="levels-section" id="levels" href="beginner.html">
+        <h2 class="section-title">Unleash Your Inner Strength!</h2>
+        <div class="level-containers">
+            <div class="level-box" id="box-level1">
+                <div class="level-image">
+                    <img src="images/level1.jpg" alt="Level 1">
+                </div>
+                <div class="level-content">
+                    <h3>Level 1</h3>
+                    <p>Beginner level to get you started on your fitness journey.</p>
+                </div>
+            </div>
+            <div class="level-box" id="box-level2">
+                <div class="level-image">
+                    <img src="images/level2.jpg" alt="Level 2">
+                </div>
+                <div class="level-content">
+                    <h3>Level 2</h3>
+                    <p>Intermediate level to enhance your fitness skills.</p>
+                </div>
+            </div>
+            <div class="level-box" id="box-level3">
+                <div class="level-image">
+                    <img src="images/level3.jpg" alt="Level 3">
+                </div>
+                <div class="level-content">
+                    <h3>Level 3</h3>
+                    <p>Advanced level for those who are ready for a challenge.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section" id="about">
+        <div class="about-content">
+            <h2>About FitSphere</h2>
+            <p>Welcome to FitSphere, your ultimate fitness partner! We provide customized workout plans and nutrition guides to help you achieve your fitness goals. Whether you are a beginner or an advanced athlete, our plans are designed to suit your needs and help you unleash your inner strength.</p>
+        </div>
+    </div>
+
+    <div class="contact-section" id="contact">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Whether you have a question, feedback, or just want to say hi, feel free to reach out using the form below.</p>
+            <form class="contact-form" action="your-server-endpoint" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" id="submit-btn">Send Message</button>
+            </form>
+            <p id="thankYouMessage" style="display: none;">Thank you! Your response was submitted.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© Rohan Mujumdar Industries LLC | Terms of Use | Privacy Policy</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="script_notification_api.js"></script>
+</body>
+</html>

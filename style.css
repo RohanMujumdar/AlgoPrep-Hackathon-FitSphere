@@ -1,0 +1,343 @@
+
+/* Header Section */
+.navbar{
+    display: flex; /* Align items horizontally */
+    height: 5.5rem; /* Set the height of the navbar */
+    gap: 2rem; /* Space between items, adjusted to fit better */
+    position: fixed; /* Fixes the navbar to the top of the page */
+    width: 100%; /* Full width of the page */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: white; /* Text color */
+    align-items: center; /* Center items vertically */
+    padding: 0 1rem; /* Add padding on the sides */
+    top: 0; /* Ensure the navbar is at the top of the page */
+    left: 0; /* Ensure the navbar is aligned to the left */
+    z-index: 1000; /* Ensure the navbar stays on top of other content */
+    opacity: 1.5px;
+}
+
+.nav-item {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.5rem; /* Font size */
+    padding: 0.5rem 1rem; /* Padding around text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-item:hover {
+    color: #f39c12; /* Change text color on hover */
+}
+
+/* Title-Section */
+
+.title-section {
+    display: flex; /* Align logo and text horizontally */
+    align-items: center; /* Center vertically */
+    gap: 0.5rem; /* Space between logo and text */
+    color: white; /* Text color */
+}
+
+.title-section img {
+    height: 2.5rem; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.title-section p {
+    margin: 0;
+    font-size: 2rem; /* Larger font size for emphasis */
+    font-family: 'Pacifico', cursive; /* Fancy font from Google Fonts */
+    font-weight: normal; /* Normal weight since Pacifico is a cursive font */
+    background: linear-gradient(90deg, #ff6f61, #d79aef); /* Gradient background color */
+    -webkit-background-clip: text; /* Apply gradient to text */
+    -webkit-text-fill-color: transparent; /* Make the text color transparent */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to text */
+}
+
+/* Item-Section */
+
+.item-section{
+    margin-left: 570px;
+}
+
+/* Body Section */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%; /* Ensure the body takes up the full height */
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+.fade-out{
+    opacity: 0;
+    transition: opacity 0.5s ease-out; /* Adjust the duration and easing as needed */
+}
+
+/* Home-Section */
+.intro-section {
+    display: flex; /* Center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    /* height: calc( 100vh  - 0.1rem ); Full viewport height */
+    height: 800px;
+    background: url('images/intro_img_FitSphere.jpg') no-repeat center center; /* Background image */
+    background-position: center center; /* Center the image */
+    background-size: cover; /* Cover the entire section */
+    color: #f0f0f0; /* Text color (whiteish-grey) */
+    text-align: center; /* Center text */
+    padding: 2rem; /* Padding around text */
+    position: relative; /* Relative positioning for overlay */
+}
+
+/* Overlay to improve text visibility */
+.intro-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Slightly dark overlay */
+    z-index: 1;
+}
+
+/* Text Styling */
+.intro {
+    font-family: 'Bebas Neue', sans-serif; /* Clean and strong font */
+    font-size: 3rem; /* Larger font size for emphasis */
+    font-weight: bold; /* Bold text */
+    color: #e0e0e0; /* Slightly darker whiteish-grey for text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    line-height: 1.2; /* Line height for readability */
+    position: relative; /* Ensure text is above the overlay */
+    z-index: 2; /* Ensure text is above overlay */
+}
+
+/* Levels Section */
+.levels-section {
+    padding: 4rem 2rem; /* Padding around the section */
+    background-color: #333; /* Darker background color for a more intense look */
+    text-align: center; /* Center text */
+    color: white;
+}
+
+.section-title {
+    font-family: 'Impact', sans-serif; /* Bold, strong font for impact */
+    font-size: 4rem; /* Larger font size for emphasis */
+    font-weight: bold; /* Bold text */
+    color: #e0e0e0; /* Slightly darker whiteish-grey for text */
+    margin-bottom: 2rem; /* Space below the title */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 3px; /* Spacing between letters */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9), 2px 2px 4px rgba(255, 255, 255, 0.7); /* Enhanced shadow for high visibility */
+    background: linear-gradient(135deg, #f5f5f5, #d0d0d0); /* More pronounced gradient background */
+    -webkit-background-clip: text; /* Clip gradient to text */
+    /* color: transparent; Hide default text color */
+    display: inline-block; /* Make background gradient apply */
+    position: relative; /* Position for pseudo-elements */
+    padding: 0.5rem; /* Padding around the text to improve readability */
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly darker background color for text visibility */
+    border-radius: 0.2rem; /* Rounded corners for the background */
+}
+
+/* Add claw-like effect using pseudo-elements */
+.section-title::before,
+.section-title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4); /* Whitish shade for the claws */
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%); /* Claw-like effect */
+    transform: rotate(-15deg); /* Tilted claw effect */
+    z-index: 1; /* Behind the text */
+}
+
+.section-title::before {
+    left: -15%;
+    opacity: 0.7;
+}
+
+.section-title::after {
+    right: -15%;
+    opacity: 0.7;
+}
+
+/* Level-Containers Styling */
+.level-containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.level-box {
+    background-color: #444; /* Dark background for boxes */
+    color: white; /* Text color inside boxes */
+    border-radius: 0.5rem; /* Rounded corners */
+    overflow: hidden; /* Ensures content doesn't overflow */
+    width: 300px; /* Fixed width for consistency */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    position: relative; /* For positioning content */
+    text-align: center; /* Center text inside the box */
+}
+
+/* Level image styling */
+.level-image img{
+    width: 100%; /* Image covers the width of the box */
+    height: 280px; /* Fixed height for images */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+/* .level-image{
+    opacity: 1;
+} */
+
+/* Level content styling */
+.level-content {
+    padding: 1rem; /* Space inside the box */
+}
+
+/* Level title styling */
+.level-content h3 {
+    font-size: 1.5rem; /* Font size for titles */
+    margin-bottom: 0.5rem; /* Space below the title */
+    font-family: 'Bebas Neue', sans-serif; /* Bold, clean font */
+    font-weight: bold; /* Ensure bold text */
+    letter-spacing: 3px; /* Spacing between letters */
+}
+
+/* Level description styling */
+.level-content p {
+    font-size: 1rem; /* Font size for descriptions */
+    margin-bottom: 0; /* Remove margin at the bottom */
+}
+
+/* Hover effects for the level boxes */
+.level-box:hover {
+    transform: translateY(-10px); /* Lift the box on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Enhanced shadow */
+}
+
+/* About Section */
+.about-section {
+    background-color: #f4f4f4; /* Light background color for contrast */
+    padding: 50px 20px; /* Padding for space inside the section */
+    text-align: center; /* Center-align text */
+    margin-top: 75px; /* Space from the top of the page */
+}
+
+.about-content {
+    max-width: 800px; /* Max width for content */
+    margin: 0 auto; /* Center content horizontally */
+}
+
+.about-section h2 {
+    font-family: 'Impact', sans-serif; /* Bold, strong font */
+    font-size: 3rem; /* Large font size for the title */
+    color: #333; /* Dark text color for readability */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.about-section p {
+    font-size: 1.2rem; /* Font size for paragraph text */
+    color: #666; /* Slightly lighter text color */
+    line-height: 1.6; /* Line height for better readability */
+    margin: 0 auto; /* Center-align text inside the content */
+    padding: 0 20px; /* Padding inside the paragraph */
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #333; /* Dark background color for a more intense look */
+    color: #fff; /* White text color for contrast */
+    padding: 50px 20px; /* Padding for space inside the section */
+    text-align: center; /* Center-align text */
+    margin-top: 75px; /* Space from the top of the page */
+}
+
+.contact-content {
+    max-width: 800px; /* Max width for content */
+    margin: 0 auto; /* Center content horizontally */
+}
+
+.contact-section h2 {
+    font-family: 'Impact', sans-serif; /* Bold, strong font */
+    font-size: 3rem; /* Large font size for the title */
+    color: #f5f5f5; /* Slightly lighter text color */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.contact-section p {
+    font-size: 1.2rem; /* Font size for paragraph text */
+    color: #ccc; /* Slightly lighter text color */
+    line-height: 1.6; /* Line height for better readability */
+    margin: 0 auto; /* Center-align text inside the content */
+    padding: 0 20px; /* Padding inside the paragraph */
+    margin-bottom: 30px; /* Space below the paragraph */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+    padding: 0 20px; /* Padding inside the form */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Space between label and input */
+}
+
+.contact-form label {
+    font-size: 1rem; /* Font size for labels */
+    color: #fff; /* White color for labels */
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff; /* White background for form inputs */
+}
+
+.contact-form button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF4500; /* Vibrant button color */
+    color: #fff; /* White text color */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for button hover effect */
+}
+
+.contact-form button:hover {
+    background-color: #FF6347; /* Slightly lighter color on hover */
+}
+
+
+/* Footer Section */
+footer{
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    text-align: left; /* Center text */
+    padding: 1rem; /* Padding around the footer */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    bottom: 0; /* Align at the bottom */
+    font-size: 0.875rem; /* Smaller font size */
+}
+
+
+#thankYouMessage {
+    font-size: 1.2rem;
+    color: #4CAF50; /* Green color for success */
+    margin-top: 1rem;
+}
