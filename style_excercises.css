@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 body{
+    height: 100vh;
     background-color:  #333; /* Darker background color for a more intense look */;
 }
 
@@ -86,4 +89,86 @@ header h1{
 .fade-out{
     opacity: 0;
     transition: opacity 0.5s ease-out; /* Adjust the duration and easing as needed */
+}
+
+
+/* Speaking Container */
+.speaking {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin-top: 20px; /* Add margin above the button */
+}
+
+/* Button Styling */
+#speak-btn {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text color */
+    padding: 15px 32px; /* Padding inside the button */
+    text-align: center; /* Center-align text */
+    text-decoration: none; /* Remove underline from text */
+    display: inline-block; /* Inline-block to respect width and height */
+    font-size: 16px; /* Font size */
+    margin: 10px 0; /* Margin around the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+/* Hover effect */
+#speak-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #222; /* Dark background for a gym vibe */
+    color: #fff; /* White text for contrast */
+    text-align: left; /* Align text to the left */
+    padding: 10px 20px; /* Padding for spacing */
+    position: fixed; /* Fixed position */
+    bottom: 0; /* Aligns to the bottom */
+    width: 100%; /* Full width */
+    font-size: 14px; /* Font size */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between text and edge */
+    border-top: 2px solid #444; /* Subtle top border for separation */
+    font-family: 'Montserrat', sans-serif; /* Stylish font */
+}
+
+/* Footer Content */
+footer .footer-content {
+    margin: 0; /* Remove default margin */
+}
+
+/* Sponsors Styling */
+footer .sponsors {
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 20px; /* Space between sponsor names */
+    align-items: center; /* Align items vertically */
+}
+
+/* Styling for the sponsors' names with hover effect */
+footer .sponsors a {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* White text color */
+    transition: color 0.5s; /* Smooth color transition */
+    font-weight: 600; /* Bold font for prominence */
+}
+
+footer .sponsors a:hover {
+    color: #f57c00; /* Change text color to a gym-friendly orange on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Logo Styling */
+footer .sponsors img.logo {
+    height: 30px; /* Adjust logo height as needed */
+    margin-right: 10px; /* Space between logo and text */
 }

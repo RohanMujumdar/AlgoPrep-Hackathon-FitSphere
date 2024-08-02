@@ -76,6 +76,9 @@ body, html {
 }
 
 /* Home-Section */
+.home-section{
+    text-align: center;
+}
 .intro-section {
     display: flex; /* Center content */
     justify-content: center; /* Center horizontally */
@@ -340,4 +343,34 @@ footer{
     font-size: 1.2rem;
     color: #4CAF50; /* Green color for success */
     margin-top: 1rem;
+}
+
+
+/* General button styles */
+#speak-btn {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text color */
+    padding: 15px 32px; /* Padding inside the button */
+    text-align: center; /* Center-align text */
+    text-decoration: none; /* Remove underline from text */
+    display: inline-block; /* Inline-block to respect width and height */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin around the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+/* Hover effect */
+#speak-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Focus effect */
+#speak-btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(0, 150, 136, 0.5); /* Custom focus outline */
 }

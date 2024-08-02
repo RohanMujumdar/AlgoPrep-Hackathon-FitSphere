@@ -87,3 +87,40 @@ main{
     opacity: 0;
     transition: opacity 0.5s ease-out; /* Adjust the duration and easing as needed */
 }
+
+/* Speaking Container */
+.speaking {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin-top: 30px; /* Increase margin above the button */
+}
+
+/* Button Styling */
+#speak-btn {
+    background-color: #F44336; /* Red background for emphasis */
+    border: none; /* Remove borders */
+    color: white; /* White text color */
+    padding: 20px 40px; /* Increased padding for a larger button */
+    text-align: center; /* Center-align text */
+    text-decoration: none; /* Remove underline from text */
+    display: inline-block; /* Inline-block to respect width and height */
+    font-size: 18px; /* Larger font size */
+    margin: 15px 0; /* Increased margin around the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+/* Hover effect */
+#speak-btn:hover {
+    background-color: #D32F2F; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+/* Focus effect */
+#speak-btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 4px rgba(244, 67, 54, 0.5); /* Custom focus outline with bright red */
+}
