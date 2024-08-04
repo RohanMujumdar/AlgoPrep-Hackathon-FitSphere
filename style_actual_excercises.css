@@ -117,4 +117,47 @@ a:hover{
     color: coral;
     transition: 0.7s;
 }
+/* Navigation Buttons Container */
+.navigation-buttons {
+    /* display: flex; */
+    justify-content: center; 
+    align-items: center;
+    background-color: #333;
+    gap: 2rem;
+    width: 100%;
+}
 
+
+/* Navigation Buttons Container */
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between; /* Space out the buttons */
+    margin: 20px 0; /* Margin around the buttons */
+}
+
+/* Navigation Button Styling */
+.nav-btn {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Padding */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+/* Previous Button */
+.prev-btn {
+    background-color: #4CAF50; /* Green background */
+}
+
+/* Next Button */
+.next-btn {
+    background-color: #f44336; /* Red background */
+}
+
+/* Hover effect */
+.nav-btn:hover {
+    background-color: #555; /* Slightly lighter background */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
